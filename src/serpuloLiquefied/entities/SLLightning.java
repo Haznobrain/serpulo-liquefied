@@ -81,7 +81,7 @@ public class CustomLightning{
                 x = furthest.x();
                 y = furthest.y();
             }else{
-                rotation += random.range(angelRand);
+                rotation += random.range(angleRand);
                 x += Angles.trnsx(rotation, hitRange / 2f);
                 y += Angles.trnsy(rotation, hitRange / 2f);
             }
