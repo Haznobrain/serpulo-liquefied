@@ -1,4 +1,4 @@
-package serpuloLiquefied.entities.bullet;
+package serpuloLiquefied.entities.bullets;
 
 import arc.graphics.*;
 import arc.math.*;
