@@ -27,4 +27,4 @@ public class Fx{
 
     public static final Effect
 
-};
+}
