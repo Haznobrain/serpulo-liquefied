@@ -80,39 +80,42 @@ public class Blocks{
 
     //campaign
     ;
-  strike = new PowerTurret("strike"){{
-    requirements(Category.turret, with(Items.copper, 200, Items.titanium, 100, Items.silicon, 100));
-    shootType = new SLLightningBulletType(){{
-        damage = 50;
-        lightningLength = 30;
-        stroke = 5f;
-        collidesAir = false;
-        ammoMultiplier = 1f;
-        angleRand = 3f;
-        lightningType = new BulletType(0.0001f, 0f){{
-                    lifetime = 12;
-                    hitEffect = Fx.hitLancer;
-                    despawnEffect = Fx.none;
-                    status = StatusEffects.shocked;
-                    statusDuration = 10f;
-                    hittable = false;
-                    lightColor = Pal.surge;
-                    collidesAir = false;
-                    buildingDamageMultiplier = 0.25f;
-                }};
-        lightningColor = Pal.surge;
-    }};
-    reload = 35;
-    shootCone = 20;
-    rotateSpeed = 4;
-    targetAir = false;
-    range = 120;
-    shootEffect = Fx.lightningShoot;
-    heatColor = Color.red;
-    recoil = 2f;
-    size = 2;
-    health = 920;
-    shootSound = Sounds.spark;
-    consumePower(4.4f);
-    coolant = consumeCoolant(0.3f);
-  }};
+    public static void load(){
+          strike = new PowerTurret("strike"){{
+            requirements(Category.turret, with(Items.copper, 200, Items.titanium, 100, Items.silicon, 100));
+            shootType = new SLLightningBulletType(){{
+                damage = 50;
+                lightningLength = 30;
+                stroke = 5f;
+                collidesAir = false;
+                ammoMultiplier = 1f;
+                angleRand = 3f;
+                lightningType = new BulletType(0.0001f, 0f){{
+                            lifetime = 12;
+                            hitEffect = Fx.hitLancer;
+                            despawnEffect = Fx.none;
+                            status = StatusEffects.shocked;
+                            statusDuration = 10f;
+                            hittable = false;
+                            lightColor = Pal.surge;
+                            collidesAir = false;
+                            buildingDamageMultiplier = 0.25f;
+                        }};
+                lightningColor = Pal.surge;
+            }};
+            reload = 35;
+            shootCone = 20;
+            rotateSpeed = 4;
+            targetAir = false;
+            range = 120;
+            shootEffect = Fx.lightningShoot;
+            heatColor = Color.red;
+            recoil = 2f;
+            size = 2;
+            health = 920;
+            shootSound = Sounds.spark;
+            consumePower(4.4f);
+            coolant = consumeCoolant(0.3f);
+          }};
+    }
+}
