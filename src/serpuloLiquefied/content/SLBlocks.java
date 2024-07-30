@@ -1,4 +1,4 @@
-package mindustry.content;
+package serpuloLiquefied.content;
 
 import arc.graphics.*;
 import arc.math.*;
@@ -11,7 +11,7 @@ import mindustry.entities.effect.*;
 import mindustry.entities.part.DrawPart.*;
 import mindustry.entities.part.*;
 import mindustry.entities.pattern.*;
-import serpuloLiquefied.entities.bullets,*;
+import serpuloLiquefied.entities.bullets.*;
 import mindustry.gen.*;
 import mindustry.graphics.*;
 import mindustry.type.*;
@@ -70,7 +70,7 @@ public class Blocks{
     //storage
 
     //turrets
-    strike,
+    strike
 
     //units
 
@@ -90,7 +90,7 @@ public class Blocks{
         ammoMultiplier = 1f;
         angleRand = 3f;
         lightningType = new BulletType(0.0001f, 0f){{
-                    lifetime = ;
+                    lifetime = 12;
                     hitEffect = Fx.hitLancer;
                     despawnEffect = Fx.none;
                     status = StatusEffects.shocked;
